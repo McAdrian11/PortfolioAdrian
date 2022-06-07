@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Adrian Morales - Web Site</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="icon" type="img/jpg" href="img/logo.png" />
     <script
       src="https://kit.fontawesome.com/9f3cfcdfd9.js"
       crossorigin="anonymous"
@@ -16,7 +17,7 @@
           <label for="btn-menu"><i class="fa-solid fa-bars"></i></label>
         </div>
         <div class="logo">
-          <a href="#home" rel="home" class="home-link"
+          <a href="" rel="home" class="home-link"
             ><img src="img/logo.png" alt=""
           /></a>
         </div>
@@ -61,7 +62,60 @@
         <img src="img/foto1.jpg" alt="Not Image..." />
       </div>
     </section>
-    <section id="projects"></section>
+
+    <section id="projects">
+      <div class="projects">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+        <div class="mySlides">
+          <button onclick="popup1()">
+            <img src="img/dino.png" alt="imagen-1" />
+          </button>
+          <div class="description">
+            <h1>DINO JUEGO</h1>
+            <p>
+              Este juego está basado en el típico dinosaurio que aparece en el
+              navegador de Google Chrome cada vez que se nos va el internet.
+              Deberás saltar los obtáculos para sumar puntos, puedes hacerlo
+              presionando la tecla space, flecha arriba o con el click izquierdo
+              del mouse. Arrancas con 0 puntos en el nivel muy fácil (día), una
+              vez llegas a 10 puntos subirá a dificultad fácil (medio día),
+              cuando tengas 25 puntos estarás en el nivel medio (tarde) y con 45
+              puntos estarás en el nivel difícil (noche), podrás darte cuenta
+              que el nivel va a cambiar, fijándote en el color del cielo.
+            </p>
+          </div>
+        </div>
+        <div class="mySlides">
+          <button onclick="popup2()">
+            <img src="img/azul.png" alt="" />
+          </button>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            voluptas, qui autem nesciunt ad obcaecati magni aliquam nulla fuga
+            sequi numquam dolore rem unde totam illum perferendis. Minus,
+            perferendis nesciunt?
+          </p>
+        </div>
+        <div class="mySlides">
+          <img src="img/verde.png" alt="" />
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            voluptas, qui autem nesciunt ad obcaecati magni aliquam nulla fuga
+            sequi numquam dolore rem unde totam illum perferendis. Minus,
+            perferendis nesciunt?
+          </p>
+        </div>
+
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="elements">
+        <span class="quadrate" onclick="currentSlide(1)"></span>
+        <span class="quadrate" onclick="currentSlide(2)"></span>
+        <span class="quadrate" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
     <section id="contact">
       <div class="redes">
         <h2 class="bio-connect">Connect With Adrian:</h2>
@@ -80,4 +134,5 @@
       </div>
     </section>
   </body>
+  <script src="javascript/main.js"></script>
 </html>
