@@ -433,6 +433,9 @@ footer {
   .container .menu {
     display: none;
   }
+  /* header {
+    height: 70px;
+  } */
   #home {
     height: 100vh;
   }
